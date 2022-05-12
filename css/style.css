@@ -1,0 +1,38 @@
+.tab{
+  width: 500px;
+}
+
+.tab-menu{
+  display: flex;
+}
+
+.tab-menu__item{
+  list-style: none;
+  border-top: 1px solid #000;
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+.tab-menu__item:not(:first-child) {
+  border-left: none;
+}
+
+.tab-menu__item.action {
+  background-color: #000;
+  color: #fff;
+}
+
+.tab-content {
+  height: 200px;
+  border: 1px solid #000;
+}
+.tab-content__item.show {
+  display: block;
+}
+.tab-content__item{
+  display: none;
+  font-size: 40px;
+}
